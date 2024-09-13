@@ -1,0 +1,278 @@
+:root { 
+  --primary-green: #00853E; /* Main TD Green */
+  --light-green-1: #00A859; /* Lighter Green for Deposit */
+  --light-green-2: #00C85A; /* Lighter Green for eTransfer */
+  --dark-green-1: #006F33; /* Darker Green for Withdraw */
+  --accent-white: #FFFFFF;
+  --dark-grey: #333333;
+  --button-hover-green: #007F3D; /* Hover green for buttons */
+  --button-red: #E74C3C;  /* Red for Logout */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--accent-white);
+  color: var(--dark-grey);
+}
+
+/* Adjusted the logo size */
+.navbar-brand img {
+  width: 80px;
+  height: auto;
+}
+
+/* Icon styles */
+.navbar-icon {
+  width: 16px;  /* Adjust icon size to be smaller */
+  height: auto;
+  margin-right: 5px;
+}
+
+/* Green button for login */
+.btn-green {
+  background-color: #00853E; /* Main TD Green */
+  color: #FFFFFF; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  background-color: #007F3D; /* Darker green on hover */
+  color: #FFFFFF;
+}
+
+/* Green button for Deposit */
+.btn-deposit {
+  background-color: #00A859; /* Light green for Deposit */
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-deposit:hover {
+  background-color: #00853E; /* Hover darker green */
+}
+
+/* Dark green button for Withdraw */
+.btn-withdraw {
+  background-color: #006F33; /* Darker green for Withdraw */
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-withdraw:hover {
+  background-color: #005F2C; /* Even darker green on hover */
+}
+
+/* Light green button for eTransfer */
+.btn-etransfer {
+  background-color: #00C85A; /* Lighter green for eTransfer */
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-etransfer:hover {
+  background-color: #00A859; /* Slightly darker green on hover */
+}
+
+/* Red button for logout */
+.btn-red {
+  background-color: var(--button-red);
+  color: var(--accent-white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-red:hover {
+  background-color: darken(var(--button-red), 10%);
+  color: var(--accent-white);
+}
+
+/* Styling for icons and login/logout */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
+
+/* Split screen section */
+.split-screen-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0;
+  gap: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Left image styles */
+.left-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 0 0 8px;
+}
+
+/* Promo box styles */
+.promo-box {
+  background-color: #00C85A;
+  color: var(--accent-white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 8px 8px 0;
+  text-align: center;
+  height: 100%;
+}
+
+/* Promo Heading style */
+.promo-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Promo text style */
+.promo-box p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* Button for opening account */
+.open-account-btn {
+  background-color: var(--primary-green);
+  color: var(--accent-white);
+  padding: 12px 24px;
+  border: 2px solid var(--primary-green);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.open-account-btn:hover {
+  background-color: var(--light-green-1);
+  color: var(--accent-white);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--dark-grey);
+  color: var(--accent-white);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer h4 {
+  color: var(--accent-white);
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: var(--light-green-2);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .list-inline-item {
+  margin: 0 15px;
+}
+
+.footer .footer-bottom {
+  margin-top: 20px;
+  color: var(--accent-white);
+}
+
+.footer .footer-bottom a {
+  color: var(--light-green-1);
+}
+
+.footer .footer-bottom a:hover {
+  color: var(--accent-white);
+}
+
+/* Top Navbar Styles */
+.td-top-navbar {
+  background-color: var(--primary-green);
+}
+
+.td-top-navbar .nav-link {
+  color: var(--accent-white) !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+}
+
+.td-top-navbar .nav-link.active {
+  text-decoration: underline;
+}
+
+.td-top-navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Icon size adjustments */
+.circle-icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--primary-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-img {
+  width: 40px;
+  height: auto;
+}
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-heading {
+  color: var(--primary-green);
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
